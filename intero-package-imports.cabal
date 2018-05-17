@@ -1,0 +1,27 @@
+name:                intero-package-imports
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/joneshf/intero-package-imports#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Hardy Jones
+maintainer:          jones3.hardy@gmail.com
+copyright:           2018 Hardy Jones
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+executable intero-package-imports
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                       , intero-package-imports
+
+library
+  hs-source-dirs:      lib
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+  exposed-modules:     Foo
